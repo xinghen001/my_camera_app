@@ -1,0 +1,24 @@
+<head>
+  <title>myapp</title>
+</head>
+
+<body>
+  <h1>Welcome to my app!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>
+      {{#each pictures}}
+          <div>
+              <img src="{{pic}}" data-id="{{id}}" class="small-img">
+              <span><br>{{time}}</span>
+          </div>
+      {{/each}}
+
+
+  </p>
+</template>
+

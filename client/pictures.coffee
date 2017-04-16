@@ -1,0 +1,1 @@
+@myPictures = new Meteor.Collection 'pictures'
